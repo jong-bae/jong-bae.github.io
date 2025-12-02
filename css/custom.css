@@ -157,7 +157,7 @@ footer {
       font-size: 1.25em;
       color: #999999; }
 
-/* 각 경력 항목의 최상위 컨테이너 */
+   /* 각 경력 항목의 최상위 컨테이너 */
 .work-container {
     display: flex; /* 내부 work-left, work-right를 가로로 배치 */
     margin-bottom: 40px; /* 항목 간 간격 */
