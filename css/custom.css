@@ -1,232 +1,238 @@
+@charset "UTF-8";
 /*
- *  Draco HTML Template by @flamekaizar
+ *  Draco HTML Template by @afnizarnur
  *  License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
  */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display SC", serif;
-  color: #333333; }
+  color: #333333;
+}
 
 a, p, li {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Pretendard";
   color: #4e4e4e;
   font-size: 1em;
-  line-height: 1.75em; }
+  line-height: 1.75em;
+}
 
 a:hover {
   text-decoration: none !important;
   color: #333333 !important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+}
 
 .container {
   margin: auto;
   max-width: 662px;
-  padding: 0 20px; }
+  padding: 0 20px;
+}
 
 @media only screen and (max-width: 767px) {
   .intro img {
     display: block;
     margin-left: auto;
-    margin-right: auto; }
-
+    margin-right: auto;
+  }
   footer {
-    text-align: center; } }
+    text-align: center;
+  }
+}
 .typed-cursor {
   opacity: 1;
   font-weight: 100;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  -ms-animation: blink 0.7s infinite;
-  -o-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite; }
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-ms-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-o-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+  animation: blink 0.7s infinite;
+}
 .main-nav {
-  background: #f4f4f4;
-  padding-top: 23px; }
-  .main-nav nav ul li a {
-    color: #a7a7a7; }
-  .main-nav nav ul li.active a {
-    color: #4d4d4d; }
+  background: rgb(243.75, 243.75, 243.75);
+  padding-top: 23px;
+}
+.main-nav nav ul li a {
+  color: rgb(167.25, 167.25, 167.25);
+}
+.main-nav nav ul li.active a {
+  color: rgb(76.5, 76.5, 76.5);
+}
 
 .section.second {
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+}
 .section .container {
-  position: relative; }
-  .section .container:after {
-    position: absolute;
-    content: url(../img/separator.png);
-    left: 20px; }
-  .section .container h1 {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    position: relative; }
+  position: relative;
+}
+.section .container:after {
+  position: absolute;
+  content: url(../img/separator.png);
+  left: 20px;
+}
+.section .container h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
 
 .intro {
   padding: 95px 0px 70px 0px;
-  overflow-x: hidden; }
-  .intro img {
-    width: 81px;
-    height: 81px;
-    border-radius: 99px; }
-  .intro .wrap {
-    margin: 30px 0px; }
-  .intro h1:before {
-    position: absolute;
-    left: -220px;
-    top: -150px;
-    font-size: 270px;
-    z-index: -1;
-    color: #f4f4f4; }
-  .intro h1 span {
-    font-size: 47px; }
+  overflow-x: hidden;
+}
+.intro img {
+  width: 81px;
+  height: 81px;
+  border-radius: 99px;
+}
+.intro .wrap {
+  margin: 30px 0px;
+}
+.intro h1:before {
+  position: absolute;
+  left: -220px;
+  top: -150px;
+  font-size: 270px;
+  z-index: -1;
+  color: rgb(243.75, 243.75, 243.75);
+}
+.intro h1 span {
+  font-size: 47px;
+}
 
 .work .work-list {
-  margin-left: 0px; }
-  .work .work-list li {
-    list-style: none;
-    font-size: 0.9375em;
-    color: #8c8c8c; }
-    .work .work-list li a {
-      padding-bottom: 5px;
-      font-size: 1.1875em;
-      font-weight: 700;
-      text-decoration: none;
-      border-bottom: 1px solid #b3b3b3; }
-      .work .work-list li a:hover {
-        border-bottom: 1px solid #333333; }
+  margin-left: 0px;
+}
+.work .work-list li {
+  list-style: none;
+  font-size: 0.9375em;
+  color: rgb(140.25, 140.25, 140.25);
+}
+.work .work-list li a {
+  padding-bottom: 5px;
+  font-size: 1.1875em;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(178.5, 178.5, 178.5);
+}
+.work .work-list li a:hover {
+  border-bottom: 1px solid #333333;
+}
 
 .award .award-list {
-  margin-left: 0px; }
-  .award .award-list li:first-child {
-    font-size: 0.9375em;
-    color: #8c8c8c; }
+  margin-left: 0px;
+}
+.award .award-list li:first-child {
+  font-size: 0.9375em;
+  color: rgb(140.25, 140.25, 140.25);
+}
 
 .skills .skill-list {
-  margin-left: 0px; }
-  .skills .skill-list li:first-child {
-    font-size: 0.9375em;
-    color: #8c8c8c; }
+  margin-left: 0px;
+}
+.skills .skill-list li:first-child {
+  font-size: 0.9375em;
+  color: rgb(140.25, 140.25, 140.25);
+}
 
 .quote {
   background: url(../img/bg.jpg);
   padding: 20px 0px;
-  margin-top: 120px; }
-  .quote h1 {
-    margin: 100px 0px;
-    padding: 40px 20px;
-    border: 5px solid #fff;
-    color: #fff; }
+  margin-top: 120px;
+}
+.quote h1 {
+  margin: 100px 0px;
+  padding: 40px 20px;
+  border: 5px solid #fff;
+  color: #fff;
+}
 
 footer {
-  padding: 50px 0px 0px 0px; }
-  footer .social li {
-    display: inline;
-    margin-left: 20px; }
-    footer .social li a {
-      font-size: 1.25em;
-      color: #999999; }
+  padding: 50px 0px 0px 0px;
+}
+footer .social li {
+  display: inline;
+  margin-left: 20px;
+}
+footer .social li a {
+  font-size: 1.25em;
+  color: #999999;
+}
 
-   /* 각 경력 항목의 최상위 컨테이너 */
+/* 각 경력 항목의 최상위 컨테이너 */
 .work-container {
-    display: flex; /* 내부 work-left, work-right를 가로로 배치 */
-    margin-bottom: 40px; /* 항목 간 간격 */
-    padding-bottom: 20px;
-    border-bottom: 1px solid #f0f0f0; /* 각 경력 항목을 구분하는 얇은 선 */
+  display: flex; /* 내부 work-left, work-right를 가로로 배치 */
+  margin-bottom: 40px; /* 항목 간 간격 */
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0; /* 각 경력 항목을 구분하는 얇은 선 */
+  /* 1. 왼쪽 영역 (회사 정보, 50% 너비) */
+  /* 2. 오른쪽 영역 (프로젝트/업무 상세, 50% 너비) */
 }
-
-/* 1. 왼쪽 영역 (회사 정보, 50% 너비) */
 .work-container .work-left {
-    flex: 0 0 50%; /* 너비 50% 고정 */
-    padding-right: 20px;
+  flex: 0 0 50%; /* 너비 50% 고정 */
+  padding-right: 20px;
 }
-
-/* 왼쪽 영역 내부 텍스트 스타일 (이미지와 유사하게) */
 .work-container .work-left p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
-
 .work-container .work-left .work-date {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
 }
-
 .work-container .work-left .work-company a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    /* 회사 이름과 직무가 세로로 나뉘도록 조정 */
-    display: block; 
-    margin-top: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  /* 회사 이름과 직무가 세로로 나뉘도록 조정 */
+  display: block;
+  margin-top: 5px;
 }
-
 .work-container .work-left .work-role {
-    color: #007bff; /* 파란색 직무 텍스트 */
-    font-style: italic;
-    font-weight: bold;
-    margin-top: 5px;
+  color: #007bff; /* 파란색 직무 텍스트 */
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 5px;
 }
-
-
-/* 2. 오른쪽 영역 (프로젝트/업무 상세, 50% 너비) */
 .work-container .work-right {
-    flex: 1; /* 남은 50% 공간 차지 */
-    padding-left: 20px;
+  flex: 1; /* 남은 50% 공간 차지 */
+  padding-left: 20px;
 }
-
 .work-container .work-right h3 {
-    margin-top: 0;
-    font-size: 1em;
-    color: #555;
-    border-bottom: 1px dashed #eee;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 1em;
+  color: #555;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
-
 .work-container .work-right ul {
-    list-style: disc; 
-    padding-left: 20px;
-    margin: 0;
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
 }
-
 .work-container .work-right li {
-    margin-bottom: 8px;
-    line-height: 1.5;
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
 
 /* 물결 모양 구분선 (필요하다면 CSS로 구현하거나 SVG/이미지 사용) */
 .wavy-line {
-    /* 실제 물결 모양은 SVG나 배경 이미지로 구현하는 것이 일반적이며, 여기서는 단순히 공간만 확보 */
-    height: 30px; 
-    margin-top: 20px;
+  /* 실제 물결 모양은 SVG나 배경 이미지로 구현하는 것이 일반적이며, 여기서는 단순히 공간만 확보 */
+  height: 30px;
+  margin-top: 20px;
+}
+
+/* 모바일 및 작은 태블릿 대응 (Media Query) */
+/* 화면 너비가 768px 이하일 때 적용되는 스타일 */
+@media (max-width: 768px) {
+  .work-container {
+    /* Flex 방향을 가로(row)에서 세로(column)로 변경 */
+    flex-direction: column;
+  }
+  /* 1. 왼쪽 영역 (work-left) 스타일 조정 */
+  .work-container .work-left {
+    flex: 0 0 auto; /* 너비 고정을 해제하고 자동으로 전체 너비(100%) 차지 */
+    width: 100%;
+    padding-right: 0; /* PC에서 적용된 오른쪽 패딩 제거 */
+    margin-bottom: 15px; /* 아래쪽 영역(work-right)과의 간격 추가 */
+  }
+  /* 2. 오른쪽 영역 (work-right) 스타일 조정 */
+  .work-container .work-right {
+    padding-left: 0; /* PC에서 적용된 왼쪽 패딩 제거 */
+    width: 100%;
+  }
 }

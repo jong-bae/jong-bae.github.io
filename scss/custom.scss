@@ -145,3 +145,97 @@ footer {
 		}
 	}
 }
+
+  /* 각 경력 항목의 최상위 컨테이너 */
+.work-container {
+    display: flex; /* 내부 work-left, work-right를 가로로 배치 */
+    margin-bottom: 40px; /* 항목 간 간격 */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0; /* 각 경력 항목을 구분하는 얇은 선 */
+
+	/* 1. 왼쪽 영역 (회사 정보, 50% 너비) */
+	.work-left {
+		flex: 0 0 50%; /* 너비 50% 고정 */
+		padding-right: 20px;
+		p {
+			margin: 5px 0;
+		}
+		.work-date {
+			font-weight: bold;
+			color: #333;
+		}
+		.work-company a {
+			text-decoration: none;
+			color: #333;
+			font-weight: 600;
+			/* 회사 이름과 직무가 세로로 나뉘도록 조정 */
+			display: block; 
+			margin-top: 5px;
+		}
+
+		.work-role {
+			color: #007bff; /* 파란색 직무 텍스트 */
+			font-style: italic;
+			font-weight: bold;
+			margin-top: 5px;
+		}
+	}
+
+	/* 2. 오른쪽 영역 (프로젝트/업무 상세, 50% 너비) */
+	.work-right {
+		flex: 1; /* 남은 50% 공간 차지 */
+		padding-left: 20px;
+
+		h3 {
+			margin-top: 0;
+			font-size: 1em;
+			color: #555;
+			border-bottom: 1px dashed #eee;
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+		}
+
+		ul {
+			list-style: disc; 
+			padding-left: 20px;
+			margin: 0;
+		}
+
+		li {
+			margin-bottom: 8px;
+			line-height: 1.5;
+		}
+	}
+}
+
+
+/* 물결 모양 구분선 (필요하다면 CSS로 구현하거나 SVG/이미지 사용) */
+.wavy-line {
+    /* 실제 물결 모양은 SVG나 배경 이미지로 구현하는 것이 일반적이며, 여기서는 단순히 공간만 확보 */
+    height: 30px; 
+    margin-top: 20px;
+}
+
+/* 모바일 및 작은 태블릿 대응 (Media Query) */
+/* 화면 너비가 768px 이하일 때 적용되는 스타일 */
+@media (max-width: 768px) {
+    
+    .work-container {
+        /* Flex 방향을 가로(row)에서 세로(column)로 변경 */
+        flex-direction: column; 
+    }
+
+    /* 1. 왼쪽 영역 (work-left) 스타일 조정 */
+    .work-container .work-left {
+        flex: 0 0 auto; /* 너비 고정을 해제하고 자동으로 전체 너비(100%) 차지 */
+        width: 100%;
+        padding-right: 0; /* PC에서 적용된 오른쪽 패딩 제거 */
+        margin-bottom: 15px; /* 아래쪽 영역(work-right)과의 간격 추가 */
+    }
+
+    /* 2. 오른쪽 영역 (work-right) 스타일 조정 */
+    .work-container .work-right {
+        padding-left: 0; /* PC에서 적용된 왼쪽 패딩 제거 */
+        width: 100%;
+    }
+}
