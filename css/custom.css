@@ -130,15 +130,15 @@ a:hover {
 }
 
 .quote {
-  background: url(../img/bg.jpg);
+  background-color: rgb(205.5, 205.5, 205.5);
   padding: 20px 0px;
   margin-top: 120px;
 }
 .quote h1 {
-  margin: 100px 0px;
+  margin: 20px 0px;
   padding: 40px 20px;
-  border: 5px solid #fff;
-  color: #fff;
+  border: 5px solid #f1f2f6;
+  color: #f1f2f6;
 }
 
 footer {
@@ -191,7 +191,11 @@ footer .social li a {
   flex: 1; /* 남은 50% 공간 차지 */
   padding-left: 20px;
 }
-.work-container .work-right h3 {
+.work-container .work-right .project {
+  margin-bottom: 25px; /* 각 프로젝트 항목 사이에 간격 추가 */
+  padding-bottom: 5px;
+}
+.work-container .work-right .project h3 {
   margin-top: 0;
   font-size: 1em;
   color: #555;
@@ -199,12 +203,12 @@ footer .social li a {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-.work-container .work-right ul {
+.work-container .work-right .project ul {
   list-style: disc;
   padding-left: 20px;
   margin: 0;
 }
-.work-container .work-right li {
+.work-container .work-right .project li {
   margin-bottom: 8px;
   line-height: 1.5;
 }
