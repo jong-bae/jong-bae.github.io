@@ -68,7 +68,7 @@
 			color: lighten($secondary, 65%);
 		}
 		span {
-			font-size: 47px;
+			font-size: 3rem;
 		}
 	}
 }
@@ -241,4 +241,11 @@ footer {
         padding-left: 0; /* PC에서 적용된 왼쪽 패딩 제거 */
         width: 100%;
     }
+	
+	.intro h1 {
+		font-size: 1.75rem;
+		span {
+			font-size: 2.5rem;
+		}
+	}
 }

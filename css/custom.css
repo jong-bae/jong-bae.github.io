@@ -91,7 +91,7 @@ a:hover {
   color: rgb(243.75, 243.75, 243.75);
 }
 .intro h1 span {
-  font-size: 47px;
+  font-size: 3rem;
 }
 
 .work .work-list {
@@ -238,5 +238,11 @@ footer .social li a {
   .work-container .work-right {
     padding-left: 0; /* PC에서 적용된 왼쪽 패딩 제거 */
     width: 100%;
+  }
+  .intro h1 {
+    font-size: 1.75rem;
+  }
+  .intro h1 span {
+    font-size: 2.5rem;
   }
 }
