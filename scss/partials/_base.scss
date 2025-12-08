@@ -1,11 +1,11 @@
 // Base
 
-h1, h2, h3, h4, h5, h6 { 
+h1 { 
 	font-family:  $playfair;
 	color: $primary; 
 }
 
-a, p, li { 
+h3, a, p, li { 
 	font-family: $custom; 
 	color: $secondary;
 	font-size: em(16);

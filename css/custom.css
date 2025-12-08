@@ -3,12 +3,12 @@
  *  Draco HTML Template by @afnizarnur
  *  License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
  */
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: "Playfair Display SC", serif;
   color: #333333;
 }
 
-a, p, li {
+h3, a, p, li {
   font-family: "Pretendard";
   color: #4e4e4e;
   font-size: 1em;
@@ -172,16 +172,21 @@ footer .social li a {
 .work-container .work-left .work-date {
   font-weight: bold;
   color: #333;
+  font-size: 1.125rem;
+}
+.work-container .work-left .work-company {
+  font-size: 2.125rem;
 }
 .work-container .work-left .work-company a {
   text-decoration: none;
   color: #333;
-  font-weight: 600;
+  font-weight: 800;
   /* 회사 이름과 직무가 세로로 나뉘도록 조정 */
   display: block;
   margin-top: 5px;
 }
 .work-container .work-left .work-role {
+  font-size: 1.25rem;
   color: #007bff; /* 파란색 직무 텍스트 */
   font-style: italic;
   font-weight: bold;
@@ -197,7 +202,8 @@ footer .social li a {
 }
 .work-container .work-right .project h3 {
   margin-top: 0;
-  font-size: 1em;
+  font-size: 1.15em;
+  font-weight: 700;
   color: #555;
   border-bottom: 1px dashed #eee;
   padding-bottom: 5px;
