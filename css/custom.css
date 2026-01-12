@@ -23,7 +23,7 @@ a:hover {
 
 .container {
   margin: auto;
-  max-width: 662px;
+  max-width: 768px;
   padding: 0 20px;
 }
 
@@ -163,7 +163,7 @@ footer .social li a {
   /* 2. 오른쪽 영역 (프로젝트/업무 상세, 50% 너비) */
 }
 .work-container .work-left {
-  flex: 0 0 50%; /* 너비 50% 고정 */
+  flex: 0 0 30%; /* 너비 50% 고정 */
   padding-right: 20px;
 }
 .work-container .work-left p {
@@ -172,10 +172,10 @@ footer .social li a {
 .work-container .work-left .work-date {
   font-weight: bold;
   color: #333;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 .work-container .work-left .work-company {
-  font-size: 2.125rem;
+  font-size: 1.5rem;
 }
 .work-container .work-left .work-company a {
   text-decoration: none;
@@ -186,7 +186,7 @@ footer .social li a {
   margin-top: 5px;
 }
 .work-container .work-left .work-role {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #007bff; /* 파란색 직무 텍스트 */
   font-style: italic;
   font-weight: bold;

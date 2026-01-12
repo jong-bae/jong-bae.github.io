@@ -155,7 +155,7 @@ footer {
 
 	/* 1. 왼쪽 영역 (회사 정보, 50% 너비) */
 	.work-left {
-		flex: 0 0 50%; /* 너비 50% 고정 */
+		flex: 0 0 30%; /* 너비 50% 고정 */
 		padding-right: 20px;
 		p {
 			margin: 5px 0;
@@ -163,10 +163,10 @@ footer {
 		.work-date {
 			font-weight: bold;
 			color: #333;
-			font-size: 1.125rem;
+			font-size: 1rem;
 		}
 		.work-company {
-			font-size: 2.125rem;
+			font-size: 1.5rem;
 			a {
 				text-decoration: none;
 				color: #333;
@@ -178,7 +178,7 @@ footer {
 		}
 
 		.work-role {
-			font-size: 1.25rem;
+			font-size: 1rem;
 			color: #007bff; /* 파란색 직무 텍스트 */
 			font-style: italic;
 			font-weight: bold;
