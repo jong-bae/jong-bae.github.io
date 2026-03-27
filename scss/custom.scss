@@ -194,14 +194,23 @@ footer {
 		.project {
 			margin-bottom: 25px; /* 각 프로젝트 항목 사이에 간격 추가 */
     		padding-bottom: 5px;
+			
 			h3 {
 				margin-top: 0;
 				font-size: 1.15em;
 				font-weight: 700;
 				color: #555;
-				border-bottom: 1px dashed #eee;
+				// border-bottom: 1px dashed #eee;
 				padding-bottom: 5px;
-				margin-bottom: 10px;
+				margin-bottom: 4px;
+			}
+			.project-date {
+				display: block;      // 한 줄을 차지하도록 설정
+				font-family: inherit; // 부모 폰트 상속
+				font-size: 0.9rem;   // 타이틀보다 살짝 작게
+				color: #777;         // 약간 흐린 회색으로 구분감 부여
+				margin-bottom: 12px; // 날짜와 아래 리스트(ul) 사이 간격
+				font-weight: 500;
 			}
 			ul {
 				list-style: disc; 
@@ -217,6 +226,39 @@ footer {
 	}
 }
 
+.intro-contact {
+	font-family: 'Pretendard', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; // 💡 가로 중앙 정렬
+    gap: 2rem;               // 항목 간 간격
+    margin-top: 3rem;        // 상단 자기소개 글과의 간격
+    margin-bottom: 6rem;     // 💡 하단 WORK 섹션과의 넉넉한 여백
+    padding-top: 2rem;
+    border-top: 1px solid #eee; 
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        font-size: 0.95rem;
+        color: #555;
+
+        i {
+            margin-right: 0.6rem;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+            &:hover {
+                color: #007bff; // 템플릿 포인트 컬러
+            }
+        }
+    }
+}
 
 /* 물결 모양 구분선 (필요하다면 CSS로 구현하거나 SVG/이미지 사용) */
 .wavy-line {
@@ -254,4 +296,14 @@ footer {
 			font-size: 2.5rem;
 		}
 	}
+
+	.intro-contact {
+        margin-bottom: 4rem; // 모바일에서는 여백 살짝 조절
+        gap: 1.5rem;
+        
+        .contact-item {
+            width: 100%;       // 💡 모바일에서는 한 줄에 하나씩 중앙 정렬
+            justify-content: center;
+        }
+    }
 }

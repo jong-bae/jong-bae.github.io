@@ -160,7 +160,6 @@ footer .social li a {
   padding-bottom: 20px;
   border-bottom: 1px solid #f0f0f0; /* 각 경력 항목을 구분하는 얇은 선 */
   /* 1. 왼쪽 영역 (회사 정보, 50% 너비) */
-  /* 2. 오른쪽 영역 (프로젝트/업무 상세, 50% 너비) */
 }
 .work-container .work-left {
   flex: 0 0 30%; /* 너비 50% 고정 */
@@ -192,6 +191,9 @@ footer .social li a {
   font-weight: bold;
   margin-top: 5px;
 }
+.work-container {
+  /* 2. 오른쪽 영역 (프로젝트/업무 상세, 50% 너비) */
+}
 .work-container .work-right {
   flex: 1; /* 남은 50% 공간 차지 */
   padding-left: 20px;
@@ -205,9 +207,16 @@ footer .social li a {
   font-size: 1.15em;
   font-weight: 700;
   color: #555;
-  border-bottom: 1px dashed #eee;
   padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+}
+.work-container .work-right .project .project-date {
+  display: block;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 12px;
+  font-weight: 500;
 }
 .work-container .work-right .project ul {
   list-style: disc;
@@ -217,6 +226,37 @@ footer .social li a {
 .work-container .work-right .project li {
   margin-bottom: 8px;
   line-height: 1.5;
+}
+
+.intro-contact {
+  font-family: "Pretendard", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+.intro-contact .contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+.intro-contact .contact-item i {
+  margin-right: 0.6rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+.intro-contact .contact-item a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+.intro-contact .contact-item a:hover {
+  color: #007bff;
 }
 
 /* 물결 모양 구분선 (필요하다면 CSS로 구현하거나 SVG/이미지 사용) */
@@ -250,5 +290,13 @@ footer .social li a {
   }
   .intro h1 span {
     font-size: 2.5rem;
+  }
+  .intro-contact {
+    margin-bottom: 4rem;
+    gap: 1.5rem;
+  }
+  .intro-contact .contact-item {
+    width: 100%;
+    justify-content: center;
   }
 }
