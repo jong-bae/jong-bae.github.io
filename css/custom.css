@@ -212,7 +212,6 @@ footer .social li a {
 }
 .work-container .work-right .project .project-date {
   display: block;
-  font-family: inherit;
   font-size: 0.9rem;
   color: #777;
   margin-bottom: 12px;
